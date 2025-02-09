@@ -4,4 +4,7 @@ import { ursersRouter } from "./usersRouter/index.js"
 
 export const router = Router()
 
-router.use((req, res) => "hello from server")
+router.use(json())
+
+router.use("/users", ursersRouter)
+router.use("/", rootRouter)
