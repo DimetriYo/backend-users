@@ -1,1 +1,1 @@
-export const generateNewId = () => `${Date.now()}${Math.random()}`
+export const generateNewId = () => crypto.randomUUID()
